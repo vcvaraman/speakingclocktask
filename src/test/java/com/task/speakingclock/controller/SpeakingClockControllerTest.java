@@ -30,11 +30,19 @@ public class SpeakingClockControllerTest {
     @Test
     public void testConvertToWords_Success() {
         String timeStr = "08:34";
+
+        String timeStr1 = "11:25";
+        
         String expectedResponse = "It's eight thirty-four";
 
         when(speakingClockService.convertToWords(timeStr)).thenReturn(expectedResponse);
 
         ResponseEntity<String> response = speakingClockController.convertToWords(timeStr);
+
+         when(speakingClockService.convertToWords(timeStr1)).thenReturn(expectedResponse);
+
+        ResponseEntity<String> response = speakingClockController.convertToWords(timeStr1);
+
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(expectedResponse, response.getBody());
@@ -44,7 +52,11 @@ public class SpeakingClockControllerTest {
     public void testConvertToWords_InvalidFormat() {
         String timeStr = "08:34:59";
 
+         String timeStr1 = "11:25:55";
+
         ResponseEntity<String> response = speakingClockController.convertToWords(timeStr);
+
+        ResponseEntity<String> response = speakingClockController.convertToWords(timeStr1);
 
         assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
         assertEquals("Invalid time format", response.getBody());
