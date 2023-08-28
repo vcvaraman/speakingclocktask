@@ -1,6 +1,6 @@
 package com.task.speakingclock.controller;
 
-import com.demo.service.SpeakingClockService;
+import com.task.service.SpeakingClockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
