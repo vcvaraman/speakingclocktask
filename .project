@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>SPEAKING-CLOCK-master</name>
-	<comment>Project speakingclocktask-master created by Buildship.</comment>
+	<name>speakingclocktask</name>
+	<comment>Project speakingclocktask created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
