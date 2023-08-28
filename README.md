@@ -14,7 +14,7 @@ Follow the steps below to get started with the Speaking Clock project:
 
 Clone the repository:
 
-git clone https://github.com/speakingclocktask/SPEAKING-CLOCK-TASK.git
+git clone https://github.com/vcvaraman/speakingclocktask
 Navigate to the project directory:
 
 cd speaking-clock
